@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- header start ------- -->
+    <header class="header" rel="js-shrink-header" data-sticky="header">
+        <div class="container header__panel">
+          <a href="#" class="header__logo"
+            ><img
+              src="./assets/img/90ae1355560d.svg"
+              alt="Blue City Center"
+              width="150"
+              height="150"
+              class="fluid-height"
+            />
+          </a>
+          <button class="header__toggler" rel="js-toggle-menu" data-target="menu">
+            <span class="burger" rel="js-menu-toggler" data-toggle="burger"
+              ><span class="burger__line"></span>
+              <span class="burger__line"></span> <span class="burger__line"></span
+            ></span>
+          </button>
+          <div class="header__menu" rel="js-menu" data-toggle="header__menu">
+            <nav class="navigation">
+              <a href="#" class="navigation__link">O projekte</a>
+              <a href="#" class="navigation__link">Kancelárie</a>
+              <a href="#" class="navigation__link">Apartmány</a>
+              <a href="#" class="navigation__link">Kontakt</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+    <!-- header end ------- -->
+
+    <!-- others sections start ---------- -->
+
+    <main>
+      <div class="caption caption--reduced">
+        <h1 class="caption__title">
+          <span class="highlight nowrap">Pošlite nám</span> vaše kontaktné údaje
+          a <span class="highlight">dohodnite si</span>
+          <span class="nowrap">s nami</span><br />stretnutie.
+        </h1>
+      </div>
+      <a id="kontakt" class="anchor"></a>
+      <div class="layer layer--without-interspace layer--without-edge contact">
+        <div class="shapes shapes--upper-outer">
+          <div class="shapes__canvas">
+            <img
+              src="./assets/img/10a707bf295b.svg"
+              alt="-"
+              width="668"
+              height="240"
+              class="triangles"
+            />
+          </div>
+        </div>
+        <div class="container contact__container">
+          <div class="contact__form">
+            <h6 class="contact__subtitle">Chcete sa dozvedieť viac?</h6>
+            <h2 class="contact__title">Zaujala vás ponuka?<br />Napíšte nám</h2>
+            <form
+              name="demand_form"
+              method="post"
+              action="https://bluecity.sk/kontakt"
+              class="form email-form"
+              novalidate
+            >
+              <div class="email-form__inputs">
+                <div>
+                  <input
+                    type="text"
+                    id="demand_form_fullName"
+                    name="demand_form[fullName]"
+                    required
+                    placeholder="Meno a priezvisko"
+                    maxlength="80"
+                    class="form__input"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    id="demand_form_phoneNumber"
+                    name="demand_form[phoneNumber]"
+                    required
+                    placeholder="Telefonní číslo"
+                    maxlength="30"
+                    class="form__input"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    id="demand_form_emailAddress"
+                    name="demand_form[emailAddress]"
+                    required
+                    placeholder="Emailová adresa"
+                    maxlength="80"
+                    class="form__input"
+                  />
+                  <input
+                    type="email"
+                    name="demand_form[email]"
+                    class="form__input form__input--auxiliary"
+                    placeholder="Emailová adresa"
+                    maxlength="50"
+                  />
+                </div>
+                <div>
+                  <select
+                    id="demand_form_serviceType"
+                    name="demand_form[serviceType]"
+                    required
+                    class="form__select"
+                  >
+                    <option value="" selected>Mám záujem o</option>
+                    <option value="Kancelárie">Kancelárie</option>
+                    <option value="Apartmány">Apartmány</option>
+                  </select>
+                </div>
+              </div>
+              <div class="email-form__actions">
+                <label class="form__input--checkbox email-form__condition"
+                  ><span class="checkbox__input"
+                    ><input
+                      type="checkbox"
+                      id="demand_form_privacyPolicy"
+                      name="demand_form[privacyPolicy]"
+                      required
+                      value="1" />
+                    <span class="checkbox__control"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                          d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                        ></path>
+                      </svg> </span
+                  ></span>
+                  <span class="checkbox__label">
+                    Súhlasím so spracovaním osobných údajov na účely vybavenia
+                    dotazu.
+                    <a
+                      href="#"
+                      title="Viac o spracovaní osobných údajov"
+                      target="_blank"
+                      >Viac informácií</a
+                    >
+                  </span></label
+                >
+                <input
+                  type="hidden"
+                  id="demand_form__token"
+                  name="demand_form[_token]"
+                  value="8ef8d0251.iOVkPCNDF1Aix08sMwFevwpKt0Zub0tZFH3a2HsOk6Q.24BJCFAGWQJNlXZAZ20T-mB6hHcBCQcYUR-frzlk-pW-oh4OdQUlCkakDg"
+                />
+                <button type="submit" class="button button--inverse">
+                  Odoslať dotaz
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="contact__place">
+            <div class="office">
+              <h4 class="office__title">Blue City Center</h4>
+              <address class="office__address">
+                <strong>TKB Poprad s.r.o.</strong><br />
+                Ludvika Svobodu 1<br />
+                058 01, Poprad<br />
+                Slovensko
+              </address>
+              <nav class="office__contacts">
+                <a href="#" title="Napíšte nám"
+                  >info@bluecity.sk</a
+                >
+                <a href="#" title="Zavolajte nám"
+                  >+421(0)901 77 99 00</a
+                >
+              </nav>
+              <nav class="office__navigation">
+                <a
+                  href="#"
+                  title="Naplánovať trasu"
+                  class="button button--long button--with-pictogram"
+                  target="_blank"
+                >
+                  <picture class="button__pictogram"
+                    ><img
+                      src="./assets/img/7f8d9574e9e9.svg"
+                      alt="Navi"
+                      width="28"
+                      height="28"
+                    />
+                  </picture>
+                  Ako sa k nám dostať?
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cookies" rel="js-cookies-bar">
+        <p class="cookies__notice">
+          Internetová stránka <strong>bluecity.sk</strong> používa súbory
+          cookies na poskytovanie služieb a analýzu návštevnosti. Viac
+          informácií o
+          <a
+            href="#"
+            title="Viac o ochrane osobných údajov"
+            target="_blank"
+            ><strong>ochrane osobných údajov</strong> </a
+          >.
+        </p>
+        <button
+          type="submit"
+          class="cookies__close button button--primary"
+          rel="js-accept-cookies"
+        >
+          Zavrieť
+        </button>
+      </div>
+    </main>
+    <!-- others sections start ---------- -->
+
+    <!-- footer section start ------- -->
+    <footer class="footer">
+        <div class="container container--narrow footer__panel">
+          <picture class="footer__logo"
+            ><img
+              src="./assets/img/5cbaf1b2fb1c.svg"
+              alt="Blue City Center"
+              width="104"
+              height="115"
+            />
+          </picture>
+          <nav class="footer__links">
+            <div>
+              <a href="#" class="footer__link">O projekte</a>
+              <a href="#" class="footer__link">Kancelárie</a>
+              <a href="#" class="footer__link">Apartmány</a>
+            </div>
+            <div>
+              <a href="#" class="footer__link"
+                >Ochrana osobných údajov</a
+              >
+              <a href="#" class="footer__link">Kontakt</a>
+            </div>
+          </nav>
+          <nav class="footer__rental">
+            <a
+              href="#"
+              class="button button--primary"
+              target="_blank"
+              title="Pokračovať k prihláseniu pre správu nájmu"
+              >Prihlásenie nájomcu</a
+            >
+          </nav>
+        </div>
+        <div class="container container--narrow footer__note">
+          <div class="footnote">
+            <p class="footnote__copyright">
+              © <strong>2024</strong> Blue City Center.
+              <span class="footnote__visuals"
+                >Vizualizácie na stránke majú informačný charakter a nemusia v
+                plnom rozsahu zodpovedať skutočnosti.</span
+              >
+            </p>
+            <nav class="footnote__socials socials">
+              <a
+                href="#"
+                title="Pokračovať na Facebook"
+                class="socials__link socials__link--rhombus"
+                target="_blank"
+                ><img
+                  src="./assets/img/d06e72b4f380.svg"
+                  alt="FB"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                href="#"
+                title="Pokračovať na Instagram"
+                class="socials__link socials__link--rhombus"
+                target="_blank"
+                ><img
+                  src="./assets/img/0084ee7c741a.svg"
+                  alt="IG"
+                  loading="lazy"
+                />
+              </a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    <!-- footer section end ------- -->
+  
+    <script src="./assets/js/script1.js"></script>
+    <script src="./assets/js/script2.js"></script>
+  </body>
+</html>
